@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  max-width: 400px;
+  box-shadow: 0 0 30px 15px rgba(153, 153, 153, 1);
+  border-radius: 1.5%;
+  background: #000;
+  color: white;
+}
+
+#display {
+  text-align: right;
+  padding: 1.5rem 1rem;
+  height: 100px;
+  font-size: 1.5rem;
+  color: black;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: white;
+}
+#threecolor {
+  background: rgb(148, 146, 146);
+  color: black;
+}
+#col {
+  background: orange;
+}
+#middle {
+  background: rgb(72, 70, 70);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons > div {
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+}
+.button {
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+.button:hover {
+  background: rgb(114, 28, 28);
+}
+
+#equal {
+  grid-column: span 2;
+  background: orange;
+}
